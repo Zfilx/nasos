@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Покупка | НасосДом</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff; /* Белый фон */
+            color: #1e90ff; /* Синий текст */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex: 1;
+        }
+
+        .left-section {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .right-section {
+            flex: 1;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: #1e90ff;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #4682b4;
+        }
+
+        .messenger-options {
+            margin-top: 20px;
+        }
+
+        .messenger-options button {
+            background-color: #1e90ff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .messenger-options button:hover {
+            background-color: #4682b4;
+        }
+
+        .small-text {
+            font-size: 0.8em;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .small-text input {
+            margin-right: 5px;
+        }
+
+        .back-button {
+            background-color: #ef4444;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            text-align: center;
+            width: 120px;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+
+        .back-button:hover {
+            background-color: #dc2626;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-700">НасосДом</h1>
+            <nav>
+                <a href="index.html" class="text-blue-600 hover:underline mr-4">Главная</a>
+                <a href="catalog.html" class="text-blue-600 hover:underline mr-4">Каталог</a>
+                <a href="contacts.html" class="text-blue-600 hover:underline">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <div class="container">
+        <div class="left-section">
+            <h1>ОТЛИЧНО! ОСТАВЬТЕ ПОЖАЛУЙСТА СВОЙ КОНТАКТ, УТОЧНИМ О ДОСТАВКЕ И ДРУГОЕ.</h1>
+            <button class="back-button" onclick="window.history.back()">Назад</button>
+        </div>
+        <div class="right-section">
+            <div>
+                <input type="text" placeholder="ИМЯ" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #1e90ff;">
+                <select style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #1e90ff;">
+                    <option>Москва</option>
+                    <option>Казань</option>
+                    <option>Санкт Петербург</option>
+                </select>
+                <input type="text" placeholder="ВВЕДИТЕ ТЕЛЕФОН *" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #1e90ff;">
+                <button class="button">ПОЛУЧИТЬ РЕЗУЛЬТАТ</button>
+                <div class="messenger-options">
+                </div>
+                <p class="small-text"><input type="checkbox"> Я соглашаюсь на обработку персональных данных</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t py-6 text-center text-sm text-gray-500">
+        © 2025 НасосДом — Все права защищены.
+    </footer>
+</body>
+</html>
